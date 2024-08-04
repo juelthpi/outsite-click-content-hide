@@ -1,3 +1,16 @@
+<script>
+    document.addEventListener('click', function(event) {
+      const div = document.getElementById('outsite_click');
+      const navbarText = document.getElementById('navbarText');
+      if (!div.contains(event.target)) {
+        // console.log('Clicked outside the div');
+        navbarText.classList.remove('show');
+      }
+    });
+  </script>
+================= other code ==============
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
